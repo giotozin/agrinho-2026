@@ -1,0 +1,345 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#F5F7F4;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+
+
+header{
+
+    background:#1B4332;
+
+    color:white;
+
+    padding:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:15px;
+
+    font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+    color:#40916C;
+
+}
+
+
+
+.hero{
+
+    background:#1B4332;
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+
+
+.hero h2{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.botao{
+
+    background:#40916C;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+}
+
+
+
+section{
+
+    padding:60px 20px;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#1B4332;
+
+}
+
+
+
+.cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    width:250px;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+
+
+.desafios-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.desafios{
+
+    flex:1;
+
+    min-width:300px;
+
+    background:#e9ecef;
+
+    padding:30px;
+
+}
+
+
+
+.solucoes{
+
+    flex:1;
+
+    min-width:300px;
+
+    background:#d8f3dc;
+
+    padding:30px;
+
+}
+
+
+
+.quiz{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+
+
+.quiz button{
+
+    padding:10px 15px;
+
+    margin:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#1B4332;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+.quiz button:hover{
+
+    background:#40916C;
+
+}
+
+
+
+form{
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+
+
+input,
+
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+
+
+form button{
+
+    background:#1B4332;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+footer{
+
+    background:#2D3142;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:20px;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+
+    header{
+
+        flex-direction:column;
+
+    }
+
+
+
+    .cards{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+
+    .desafios-container{
+
+        flex-direction:column;
+
+    }
+
+
+
+}
