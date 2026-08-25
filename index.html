@@ -15,10 +15,6 @@
 
 <body>
 
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
-
     <header class="topo">
 
         <div class="logo">
@@ -35,11 +31,9 @@
     </header>
 
 
-    <!-- =========================
-         INÍCIO
-    ========================== -->
-
     <main>
+
+        <!-- INÍCIO -->
 
         <section id="inicio" class="hero">
 
@@ -75,9 +69,7 @@
         </section>
 
 
-        <!-- =========================
-             APRESENTAÇÃO
-        ========================== -->
+        <!-- INTRODUÇÃO -->
 
         <section class="introducao">
 
@@ -112,62 +104,27 @@
             <div class="introducao-destaques">
 
                 <div class="mini-card">
-
                     <span>🌱</span>
-
-                    <h3>
-                        Produção
-                    </h3>
-
-                    <p>
-                        Eficiência e responsabilidade no campo.
-                    </p>
-
+                    <h3>Produção</h3>
+                    <p>Eficiência e responsabilidade no campo.</p>
                 </div>
 
-
                 <div class="mini-card">
-
                     <span>💧</span>
-
-                    <h3>
-                        Recursos
-                    </h3>
-
-                    <p>
-                        Uso consciente da água e do solo.
-                    </p>
-
+                    <h3>Recursos</h3>
+                    <p>Uso consciente da água e do solo.</p>
                 </div>
 
-
                 <div class="mini-card">
-
                     <span>🐝</span>
-
-                    <h3>
-                        Natureza
-                    </h3>
-
-                    <p>
-                        Conservação da biodiversidade.
-                    </p>
-
+                    <h3>Natureza</h3>
+                    <p>Conservação da biodiversidade.</p>
                 </div>
 
-
                 <div class="mini-card">
-
                     <span>🛰️</span>
-
-                    <h3>
-                        Tecnologia
-                    </h3>
-
-                    <p>
-                        Dados para decisões mais eficientes.
-                    </p>
-
+                    <h3>Tecnologia</h3>
+                    <p>Dados para decisões mais eficientes.</p>
                 </div>
 
             </div>
@@ -175,9 +132,7 @@
         </section>
 
 
-        <!-- =========================
-             APRENDA
-        ========================== -->
+        <!-- APRENDA -->
 
         <section id="aprenda" class="aprenda">
 
@@ -199,13 +154,14 @@
 
             <div class="temas-grid">
 
+                <!-- AGRICULTURA -->
 
                 <article class="tema">
 
                     <div class="tema-imagem">
 
                         <img
-                            src="assets/agricultura-sustentavel.jpg"
+                            src="assets/agricultura-sustentavel.jpeg"
                             alt="Agricultura sustentável"
                         >
 
@@ -229,6 +185,8 @@
 
                 </article>
 
+
+                <!-- ÁGUA -->
 
                 <article class="tema">
 
@@ -260,6 +218,8 @@
                 </article>
 
 
+                <!-- BIODIVERSIDADE -->
+
                 <article class="tema">
 
                     <div class="tema-imagem">
@@ -290,12 +250,14 @@
                 </article>
 
 
+                <!-- TECNOLOGIA -->
+
                 <article class="tema">
 
                     <div class="tema-imagem">
 
                         <img
-                            src="assets/tecnologia-agro.jpg"
+                            src="assets/tecnologia-agro.jpeg"
                             alt="Tecnologia no agronegócio"
                         >
 
@@ -323,9 +285,7 @@
         </section>
 
 
-        <!-- =========================
-             QUIZ
-        ========================== -->
+        <!-- QUIZ -->
 
         <section id="quiz" class="quiz-secao">
 
@@ -369,34 +329,26 @@
             </div>
 
 
-            <!-- ÁREA DO QUIZ -->
-
             <div id="quizArea" class="quiz-area escondido">
 
                 <div class="quiz-topo">
 
                     <div>
-
                         <span id="numeroPergunta">
                             Pergunta 1 de 10
                         </span>
-
                     </div>
 
                     <div class="pontuacao">
                         Pontos:
-                        <strong id="pontuacao">
-                            0
-                        </strong>
+                        <strong id="pontuacao">0</strong>
                     </div>
 
                 </div>
 
 
                 <div class="progresso">
-
                     <div id="barraProgresso"></div>
-
                 </div>
 
 
@@ -406,7 +358,7 @@
 
                         <img
                             id="imagemPergunta"
-                            src="assets/agricultura-sustentavel.jpg"
+                            src="assets/agricultura-sustentavel.jpeg"
                             alt="Imagem relacionada à pergunta"
                         >
 
@@ -423,25 +375,19 @@
                             Pergunta
                         </h3>
 
-
                         <div
                             id="alternativas"
-                            class="alternativas"
-                        >
+                            class="alternativas">
                         </div>
-
 
                         <div
                             id="feedback"
-                            class="feedback"
-                        >
+                            class="feedback">
                         </div>
-
 
                         <button
                             id="proxima"
-                            class="botao-principal botao-proxima escondido"
-                        >
+                            class="botao-principal botao-proxima escondido">
                             PRÓXIMA PERGUNTA →
                         </button>
 
@@ -452,16 +398,15 @@
             </div>
 
 
-            <!-- =========================
-                 RESULTADO
-            ========================== -->
+            <!-- RESULTADO -->
 
             <div
                 id="resultado"
-                class="resultado escondido"
-            >
+                class="resultado escondido">
 
-                <div class="resultado-icone" id="resultadoIcone">
+                <div
+                    class="resultado-icone"
+                    id="resultadoIcone">
                     🌱
                 </div>
 
@@ -475,54 +420,28 @@
                     Você terminou o desafio.
                 </p>
 
-
                 <div class="resultado-numeros">
 
                     <div>
-
-                        <strong id="resultadoPontos">
-                            0
-                        </strong>
-
-                        <span>
-                            pontos
-                        </span>
-
+                        <strong id="resultadoPontos">0</strong>
+                        <span>pontos</span>
                     </div>
 
-
                     <div>
-
-                        <strong id="resultadoAcertos">
-                            0
-                        </strong>
-
-                        <span>
-                            acertos
-                        </span>
-
+                        <strong id="resultadoAcertos">0</strong>
+                        <span>acertos</span>
                     </div>
 
-
                     <div>
-
-                        <strong id="resultadoPorcentagem">
-                            0%
-                        </strong>
-
-                        <span>
-                            aproveitamento
-                        </span>
-
+                        <strong id="resultadoPorcentagem">0%</strong>
+                        <span>aproveitamento</span>
                     </div>
 
                 </div>
 
-
                 <button
                     class="botao-principal"
-                    id="reiniciar"
-                >
+                    id="reiniciar">
                     JOGAR NOVAMENTE
                 </button>
 
@@ -531,14 +450,11 @@
         </section>
 
 
-        <!-- =========================
-             REVISÃO
-        ========================== -->
+        <!-- REVISÃO -->
 
         <section
             id="revisao"
-            class="revisao escondido"
-        >
+            class="revisao escondido">
 
             <div class="titulo-secao">
 
@@ -561,9 +477,7 @@
         </section>
 
 
-        <!-- =========================
-             FRASE FINAL
-        ========================== -->
+        <!-- FRASE FINAL -->
 
         <section class="frase-final">
 
@@ -583,8 +497,7 @@
 
                 <button
                     class="botao-claro"
-                    id="voltarQuiz"
-                >
+                    id="voltarQuiz">
                     FAZER O QUIZ NOVAMENTE
                 </button>
 
@@ -593,9 +506,7 @@
         </section>
 
 
-        <!-- =========================
-             FONTES
-        ========================== -->
+        <!-- FONTES -->
 
         <section id="fontes" class="fontes">
 
@@ -622,8 +533,7 @@
                     href="https://www.embrapa.br/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="fonte"
-                >
+                    class="fonte">
 
                     <span>EMBRAPA</span>
 
@@ -636,9 +546,7 @@
                         sustentabilidade, solo, água e tecnologia.
                     </p>
 
-                    <b>
-                        Visitar fonte ↗
-                    </b>
+                    <b>Visitar fonte ↗</b>
 
                 </a>
 
@@ -647,8 +555,7 @@
                     href="https://www.gov.br/agricultura/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="fonte"
-                >
+                    class="fonte">
 
                     <span>MAPA</span>
 
@@ -661,9 +568,7 @@
                         desenvolvimento sustentável.
                     </p>
 
-                    <b>
-                        Visitar fonte ↗
-                    </b>
+                    <b>Visitar fonte ↗</b>
 
                 </a>
 
@@ -672,8 +577,7 @@
                     href="https://www.ibge.gov.br/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="fonte"
-                >
+                    class="fonte">
 
                     <span>IBGE</span>
 
@@ -686,9 +590,7 @@
                         território e meio ambiente.
                     </p>
 
-                    <b>
-                        Visitar fonte ↗
-                    </b>
+                    <b>Visitar fonte ↗</b>
 
                 </a>
 
@@ -697,8 +599,7 @@
                     href="https://sdgs.un.org/goals"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="fonte"
-                >
+                    class="fonte">
 
                     <span>ONU</span>
 
@@ -711,9 +612,7 @@
                         água, energia, produção e conservação.
                     </p>
 
-                    <b>
-                        Visitar fonte ↗
-                    </b>
+                    <b>Visitar fonte ↗</b>
 
                 </a>
 
@@ -723,10 +622,6 @@
 
     </main>
 
-
-    <!-- =========================
-         RODAPÉ
-    ========================== -->
 
     <footer>
 
