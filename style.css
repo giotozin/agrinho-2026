@@ -1,0 +1,1119 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6ef;
+    color: #243224;
+    line-height: 1.6;
+}
+
+button,
+a {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.topo {
+    width: 100%;
+    height: 76px;
+    background: #17251b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+    position: relative;
+    z-index: 20;
+}
+
+.logo {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #b5d86b;
+}
+
+.topo nav {
+    display: flex;
+    gap: 30px;
+}
+
+.topo nav a {
+    color: #e8eee3;
+    font-size: 0.88rem;
+    transition: 0.3s;
+}
+
+.topo nav a:hover {
+    color: #b5d86b;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.botao-principal {
+    border: none;
+    background: #a8cf63;
+    color: #17251b;
+
+    padding: 15px 25px;
+
+    font-weight: 800;
+    font-size: 0.85rem;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background: #d0eb9a;
+    transform: translateY(-3px);
+}
+
+.botao-claro {
+    border: 1px solid rgba(255,255,255,0.5);
+    background: transparent;
+    color: white;
+
+    padding: 14px 23px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.botao-claro:hover {
+    background: white;
+    color: #17251b;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 88vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("assets/fundo-quiz-agro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+.hero-filtro {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(12, 26, 16, 0.94),
+        rgba(12, 26, 16, 0.68),
+        rgba(12, 26, 16, 0.25)
+    );
+}
+
+.hero-conteudo {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.selo {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(181,216,107,0.5);
+
+    color: #d1e99b;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    max-width: 780px;
+
+    font-size: clamp(3rem, 7vw, 6.4rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 strong {
+    color: #b8d970;
+    display: block;
+}
+
+.hero p {
+    max-width: 620px;
+
+    color: #e1e8dc;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 35px;
+}
+
+.indicador-scroll {
+    position: absolute;
+    z-index: 2;
+
+    bottom: 30px;
+    right: 7%;
+
+    color: #d9e5d0;
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.introducao,
+.aprenda,
+.quiz-secao,
+.revisao,
+.fontes {
+    padding: 110px 7%;
+}
+
+.numero-secao,
+.titulo-secao > span {
+    color: #6c8c35;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   INTRODUÇÃO
+========================================= */
+
+.introducao {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    background: #f4f6ef;
+}
+
+.introducao-texto h2 {
+    font-size: clamp(2.4rem, 4vw, 4rem);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin: 20px 0 30px;
+}
+
+.introducao-texto h2 em {
+    display: block;
+
+    font-style: normal;
+
+    color: #78953d;
+}
+
+.introducao-texto p {
+    max-width: 620px;
+
+    margin-bottom: 20px;
+
+    color: #596457;
+}
+
+.frase {
+    margin-top: 35px;
+
+    padding: 22px;
+
+    border-left: 4px solid #a8cf63;
+
+    background: white;
+
+    font-weight: 700;
+}
+
+.frase span {
+    font-size: 2rem;
+    color: #91b64e;
+}
+
+.introducao-destaques {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    align-content: center;
+}
+
+.mini-card {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e1e6d9;
+
+    transition: 0.3s;
+}
+
+.mini-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #a8cf63;
+}
+
+.mini-card > span {
+    font-size: 2rem;
+}
+
+.mini-card h3 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.mini-card p {
+    color: #6a7368;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+.titulo-secao {
+    max-width: 700px;
+    margin-bottom: 55px;
+}
+
+.titulo-secao h2 {
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin: 18px 0;
+}
+
+.titulo-secao h2 strong {
+    color: #78953d;
+    display: block;
+}
+
+.titulo-secao p {
+    color: #687265;
+}
+
+
+/* =========================================
+   APRENDA
+========================================= */
+
+.aprenda {
+    background: #e9eee2;
+}
+
+.temas-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.tema {
+    background: white;
+
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.tema:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(26,42,26,0.1);
+}
+
+.tema-imagem {
+    position: relative;
+
+    min-height: 280px;
+}
+
+.tema-imagem img {
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.tema-imagem span {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background: #17251b;
+    color: white;
+
+    padding: 7px 11px;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+}
+
+.tema-conteudo {
+    padding: 35px 30px;
+}
+
+.tema-conteudo h3 {
+    font-size: 1.45rem;
+
+    margin-bottom: 15px;
+}
+
+.tema-conteudo p {
+    color: #657064;
+
+    font-size: 0.92rem;
+}
+
+
+/* =========================================
+   QUIZ
+========================================= */
+
+.quiz-secao {
+    background: #17251b;
+    color: white;
+}
+
+.quiz-introducao {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.quiz-introducao > span {
+    color: #b5d86b;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.quiz-introducao h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 1;
+
+    margin: 18px 0 25px;
+
+    letter-spacing: -2px;
+}
+
+.quiz-introducao h2 strong {
+    color: #b5d86b;
+    display: block;
+}
+
+.quiz-introducao > p {
+    color: #cdd8c8;
+
+    max-width: 600px;
+
+    margin: auto auto 30px;
+}
+
+.quiz-regras {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 45px;
+
+    margin-bottom: 35px;
+}
+
+.quiz-regras div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.quiz-regras strong {
+    font-size: 1.7rem;
+
+    color: #b5d86b;
+}
+
+.quiz-regras span {
+    font-size: 0.72rem;
+
+    color: #b8c4b4;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   ÁREA DO QUIZ
+========================================= */
+
+.quiz-area {
+    max-width: 1000px;
+
+    margin: 80px auto 0;
+}
+
+.quiz-topo {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+    color: #bdc9ba;
+
+    font-size: 0.85rem;
+}
+
+.pontuacao strong {
+    color: #b5d86b;
+}
+
+.progresso {
+    width: 100%;
+
+    height: 6px;
+
+    background: #334236;
+
+    margin-bottom: 25px;
+}
+
+#barraProgresso {
+    height: 100%;
+
+    width: 0%;
+
+    background: #b5d86b;
+
+    transition: width 0.4s;
+}
+
+.pergunta-card {
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+
+    background: white;
+
+    color: #243224;
+}
+
+.pergunta-imagem {
+    min-height: 500px;
+}
+
+.pergunta-imagem img {
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.pergunta-conteudo {
+    padding: 45px;
+}
+
+#categoriaPergunta {
+    color: #78953d;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+#textoPergunta {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+
+    line-height: 1.15;
+
+    margin: 15px 0 30px;
+}
+
+.alternativas {
+    display: grid;
+
+    gap: 12px;
+}
+
+.alternativa {
+    border: 1px solid #dce3d7;
+
+    background: #f8faf6;
+
+    padding: 16px 18px;
+
+    text-align: left;
+
+    color: #30402f;
+
+    transition: 0.25s;
+
+    font-size: 0.95rem;
+}
+
+.alternativa:hover:not(:disabled) {
+    border-color: #91b64e;
+
+    background: #eef5df;
+
+    transform: translateX(4px);
+}
+
+.alternativa.correta {
+    background: #dcefc0;
+
+    border-color: #80a83c;
+
+    color: #264019;
+
+    font-weight: 700;
+}
+
+.alternativa.errada {
+    background: #f4dcdc;
+
+    border-color: #bd6d6d;
+
+    color: #642b2b;
+}
+
+.alternativa:disabled {
+    cursor: default;
+}
+
+.feedback {
+    min-height: 45px;
+
+    margin: 18px 0;
+
+    padding: 12px 15px;
+
+    font-size: 0.9rem;
+
+    display: none;
+}
+
+.feedback.mostrar {
+    display: block;
+}
+
+.feedback.acerto {
+    background: #e6f2d4;
+
+    color: #38571d;
+}
+
+.feedback.erro {
+    background: #f5dfdf;
+
+    color: #693333;
+}
+
+.botao-proxima {
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   RESULTADO
+========================================= */
+
+.resultado {
+    max-width: 800px;
+
+    margin: 80px auto 0;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    background: white;
+
+    color: #243224;
+}
+
+.resultado-icone {
+    font-size: 4rem;
+
+    margin-bottom: 15px;
+}
+
+.resultado > span {
+    color: #78953d;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.resultado h2 {
+    font-size: 3rem;
+
+    margin: 10px 0;
+}
+
+.resultado p {
+    color: #657064;
+
+    max-width: 580px;
+
+    margin: auto auto 35px;
+}
+
+.resultado-numeros {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #e0e5dc;
+    border-bottom: 1px solid #e0e5dc;
+
+    margin-bottom: 35px;
+}
+
+.resultado-numeros div {
+    padding: 25px 10px;
+
+    border-right: 1px solid #e0e5dc;
+}
+
+.resultado-numeros div:last-child {
+    border-right: none;
+}
+
+.resultado-numeros strong {
+    display: block;
+
+    font-size: 2rem;
+
+    color: #698936;
+}
+
+.resultado-numeros span {
+    color: #747c70;
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   REVISÃO
+========================================= */
+
+.revisao {
+    background: #f4f6ef;
+}
+
+.lista-erros {
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.erro-item {
+    background: white;
+
+    padding: 28px;
+
+    margin-bottom: 15px;
+
+    border-left: 4px solid #bd6d6d;
+}
+
+.erro-item h3 {
+    margin-bottom: 10px;
+}
+
+.erro-item p {
+    color: #657064;
+
+    margin-bottom: 8px;
+}
+
+.resposta-correta {
+    color: #527d25 !important;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   FRASE FINAL
+========================================= */
+
+.frase-final {
+    min-height: 500px;
+
+    background: #263c2a;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 90px 7%;
+}
+
+.frase-final > div {
+    max-width: 900px;
+}
+
+.frase-final span {
+    color: #b5d86b;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.frase-final h2 {
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
+
+    line-height: 0.98;
+
+    letter-spacing: -3px;
+
+    margin: 20px 0;
+}
+
+.frase-final h2 strong {
+    color: #b5d86b;
+}
+
+.frase-final p {
+    color: #ced8ca;
+
+    margin-bottom: 30px;
+
+    max-width: 600px;
+}
+
+
+/* =========================================
+   FONTES
+========================================= */
+
+.fontes {
+    background: #f4f6ef;
+}
+
+.fontes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.fonte {
+    background: white;
+
+    padding: 35px;
+
+    border: 1px solid #e0e5dc;
+
+    transition: 0.3s;
+}
+
+.fonte:hover {
+    transform: translateY(-5px);
+
+    border-color: #9cbb63;
+}
+
+.fonte > span {
+    color: #78953d;
+
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.fonte h3 {
+    margin: 12px 0;
+
+    font-size: 1.3rem;
+}
+
+.fonte p {
+    color: #697267;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 20px;
+}
+
+.fonte b {
+    color: #567b28;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+    background: #111c14;
+
+    color: #cbd5c8;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 12px;
+
+    color: #8f9d8d;
+}
+
+footer small {
+    color: #697568;
+}
+
+
+/* =========================================
+   UTILIDADES
+========================================= */
+
+.escondido {
+    display: none !important;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .topo {
+        padding: 0 5%;
+    }
+
+    .topo nav {
+        gap: 15px;
+    }
+
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .temas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pergunta-card {
+        grid-template-columns: 1fr;
+    }
+
+    .pergunta-imagem {
+        min-height: 280px;
+    }
+
+    .fontes-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .topo {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .topo nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 80vh;
+
+        background-attachment: scroll;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .introducao,
+    .aprenda,
+    .quiz-secao,
+    .revisao,
+    .fontes {
+        padding: 75px 5%;
+    }
+
+    .introducao-destaques {
+        grid-template-columns: 1fr;
+    }
+
+    .tema {
+        grid-template-columns: 1fr;
+    }
+
+    .tema-imagem {
+        min-height: 220px;
+    }
+
+    .quiz-regras {
+        gap: 20px;
+    }
+
+    .quiz-regras strong {
+        font-size: 1.3rem;
+    }
+
+    .pergunta-conteudo {
+        padding: 28px 22px;
+    }
+
+    .resultado {
+        padding: 45px 20px;
+    }
+
+    .resultado-numeros {
+        grid-template-columns: 1fr;
+    }
+
+    .resultado-numeros div {
+        border-right: none;
+
+        border-bottom: 1px solid #e0e5dc;
+    }
+
+    .resultado-numeros div:last-child {
+        border-bottom: none;
+    }
+
+    .frase-final {
+        padding: 75px 5%;
+    }
+
+}
